@@ -98,7 +98,7 @@ function addMessage(msg, is_me=false){
   // 自分の発言
   //------------------------
   if( is_me ){
-    li.innerHTML = `${msg.name}> ${msg.text}`;
+    li.innerHTML = `<span class='msg-me'>${msg.name}> ${msg.text}</span>`;
   }
   //------------------------
   // 自分以外の発言
